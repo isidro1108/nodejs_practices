@@ -1,8 +1,11 @@
-const http = require('http')
+const http = require('http'),
+        fs = require('fs')
 
 const handleServer = (req, res) => {
-    res.write('<h1>My first server with nodejs</h1>')
-    res.end()
+    fs.readFile('./index.html', (err, html) => {
+        res.write(html)
+        res.end()
+    })
 }
 
 const server = http.createServer(handleServer)
