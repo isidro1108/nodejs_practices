@@ -1,5 +1,6 @@
 const http = require('http'),
-        fs = require('fs')
+        fs = require('fs'),
+    colors = require('colors')
 
 const handleServer = (req, res) => {
     fs.readFile('./index.html', (err, html) => {
@@ -11,5 +12,5 @@ const handleServer = (req, res) => {
 const server = http.createServer(handleServer)
 
 server.listen(3000, () => {
-    console.log('Server on port 3000')
+    console.log('Server on port 3000'.green)
 })
