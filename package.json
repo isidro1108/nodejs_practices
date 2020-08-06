@@ -1,0 +1,30 @@
+{
+  "name": "nodejs_practices",
+  "version": "1.0.0",
+  "description": "This is my backend's practice",
+  "main": "server.js",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isidro1108/nodejs_practices.git"
+  },
+  "keywords": [
+    "practices",
+    "nodejs",
+    "express"
+  ],
+  "author": "Isidro Morla",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/isidro1108/nodejs_practices/issues"
+  },
+  "homepage": "https://github.com/isidro1108/nodejs_practices#readme"
+}
