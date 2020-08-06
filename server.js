@@ -1,16 +1,12 @@
-const http = require('http'),
-        fs = require('fs'),
-    colors = require('colors')
+const express = require('express'),
+        app = express(),
+        colors = require('colors')
 
-const handleServer = (req, res) => {
-    fs.readFile('./index.html', (err, html) => {
-        res.write(html)
-        res.end()
-    })
-}
+app.get('/', (req, res) => {
+    res.send('<h1>Hello world</h1>')
+})
 
-const server = http.createServer(handleServer)
-
-server.listen(3000, () => {
-    console.log('Server on port 3000'.green)
+let port = 3000
+app.listen(port, () => {
+    console.log(`Server on port ${port}`.green)
 })
